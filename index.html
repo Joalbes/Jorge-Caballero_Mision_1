@@ -1,70 +1,51 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
-</head>
-<body>
-    <div id="header" class="flex flex-row bg-[#040540] text-pink-700">
+  </head>
+  <body>
+    <nav id="nav">
+      <div
+        id="cajalogo"
+        class="avatar"
+        style="background-image: url('./asset/asset/logo.png')"
+      ></div>
+      <div id="leyendalogo">
+        <h1>R&A Web</h1>
+      </div>
 
-        <div id="icono" class="w-[100px] h-[50px] ml-[100px]">
-            <img src="./asset/logo.png" alt="No es posible visualizar la imagen">            
-        </div>
-        <div class="flex items-center">
-            <h1 class="text-white">R&A Web</h1>
-        </div>
+      <button id="primerboton" class="btngeberico"><a href="#inicio"></a>INICIO</button>
+      <button class="btngeberico"><a href="#acerca"></a>ACERCA</button>
+      <button class="btngeberico"><a href="#servicios"></a>SERVICIOS</button>
+      <button class="btngeberico"><a href="#portafolio"></a>PORTAFOLIO</button>
+      <button class="btngeberico"><a href="#testimonios"></a>TESTIMONIOS</button>
+      <button class="btngeberico"><a href="#contacto"></a>CONTACTO</button>
+    </nav>
 
-        <div id="menu" class="flex flex-row ">
-            <button class="p-5 ml-[200px] hover:text-white"><a href="#inicio">INICIO</a></button>
-            <button class="p-5  hover:text-white"><a href="#acerca">ACERCA</a></button>
-            <button class="p-5  hover:text-white"><a href="#servicios">SERVICIOS</a></button>
-            <button class="p-5  hover:text-white"><a href="#portafolio">PORTAFOLIO</a></button>
-            <button class="p-5  hover:text-white"><a href="#testimonios">TESTIMONIOS</a></button>
-            <button class="p-5  hover:text-white"><a href="#contacto">CONTACTO</a></button>
-        </div>
+    <div id="inicio">
+      <div id="contenedortitulo">
+        <h1>Bienvenid@s a mi sitio</h1>
+      </div>
 
+      <button id="bcontactame">CONTACTAME</button>
     </div>
 
-    <div id="inicio" class="bg-[url('./asset/background__welcome.jpg')]  w-full flex flex-col text-center h-[573px] justify-center items-center brightness-50">
-        <div id="mensaje" class="text-[80px] text-white w-[400px]">
-            <h1 class="font-bold">Bienvenid@s a mi sitio</h1>
-        </div>                       
-        <button class="bg-pink-700 text-white rounded-full w-[200px] hover:bg-white hover:text-pink-700 p-3">CONTACTAME</button>
+    <div id="acerca">
+      <div id="acerca1">
+        <h1>Bienvenid@s a mi sitio</h1>
+      </div>
+      <div id="acerca2foto">
+        <h1>Bienvenid@s a mi sitio</h1>
+      </div>
+      <div id="acerca3">
+        <h1>Bienvenid@s a mi sitio</h1>
+      </div>
+
+      <button id="bcontactame">DESCARGAR CV</button>
     </div>
-
-    <div id="acerca" class="bg-[url('./asset/background__welcome.jpg')]  w-full flex flex-col text-center h-[573px] justify-center items-center brightness-50">
-        <div id="mensaje" class="text-[80px] text-white w-[400px]">
-            <h1 class="font-bold">Bienvenid@s a mi sitio</h1>
-        </div>
-    </div>
-
-    <div id="servicios" class="bg-[url('./asset/background__welcome.jpg')]  w-full flex flex-col text-center h-[573px] justify-center items-center brightness-50">
-        <div id="mensaje" class="text-[80px] text-white w-[400px]">
-            <h1 class="font-bold">Servicios</h1>
-        </div>
-    </div>
-
-    <div id="portafolio" class="bg-[url('./asset/background__welcome.jpg')]  w-full flex flex-col text-center h-[573px] justify-center items-center brightness-50">
-        <div id="mensaje" class="text-[80px] text-white w-[400px]">
-            <h1 class="font-bold">portafolio</h1>
-        </div>
-    </div>
-
-    <div id="testimonios" class="bg-[url('./asset/background__welcome.jpg')]  w-full flex flex-col text-center h-[573px] justify-center items-center brightness-50">
-        <div id="mensaje" class="text-[80px] text-white w-[400px]">
-            <h1 class="font-bold">testimonios</h1>
-        </div>
-    </div>
-
-    <div id="contacto" class="bg-[url('./asset/background__welcome.jpg')]  w-full flex flex-col text-center h-[573px] justify-center items-center brightness-50">
-        <div id="mensaje" class="text-[80px] text-white w-[400px]">
-            <h1 class="font-bold">contacto</h1>
-        </div>
-    </div>
-
-
-</body>
+  </body>
 </html>

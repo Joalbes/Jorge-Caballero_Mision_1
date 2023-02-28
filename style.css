@@ -1,0 +1,109 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+height: 100%;
+width: 100%;
+
+}
+
+.avatar {
+    /* cambia estos dos valores para definir el tamaño de tu círculo */
+    height: 50px;
+    width: 50px;
+    background-image:url('./asset/asset/logo.png') ;
+    background-size: cover;
+    border-radius: 50%;
+    margin: 0;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    background-color: rgb(11, 11, 82);
+    color: aliceblue;
+    position: fixed;
+    border:none ; 
+    
+}
+
+
+#cajalogo{
+    margin-left: 50px;
+    padding-right: 5px;
+}
+
+#leyendalogo{
+    margin-left: 5px;
+    align-items: center;
+}
+
+button{
+    margin-left: 20px;
+    margin-right: 20px;
+    color:deeppink;
+    background-color:rgb(11, 11, 82);    
+    border:none ; 
+}
+
+button:hover{
+    color: aliceblue;
+}
+
+#bcontactame{
+    padding: 10px;
+    background-color:deeppink;
+    border-radius: 12px;
+    color: aliceblue;
+}
+
+#bcontactame:hover{
+    color: deeppink;
+    background-color: aliceblue;
+}
+
+
+#primerboton{
+    margin-left: 400px;
+}
+
+#inicio{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.836)), url("./asset/asset/background__welcome.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    font-size: xx-large;    
+
+}
+
+#contenedortitulo{
+    width: 400px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    font-size:150% ;
+}
+
+#leyendalogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#acerca{
+    width: 100%;
+    display: flex;
+
+}
