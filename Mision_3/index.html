@@ -1,102 +1,67 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Pag Inicio</title>
-</head>
+  </head>
 
-<body class="flex h-screen">
+  <body class="flex h-screen">
     <!-- CAJA PRINCIPAL -->
     <main class="flex flex-row w-full p-[1rem]">
-        <!-- barra roja -->
-        <section id="barraroja" class="w-[20%] bg-[#C9231B]"></section>
-        <!-- barra de contenido -->
-        <section id="contenido" class="w-[80%] bg-[#FFFFFF]">
-            <!-- CAJA DE ENCABEZADO -->
-            <div id="footer" class="flex flex-row justify-between">
-                <!-- caja vacia -->
-                <div></div>
-                <!-- Etiqueta Usuarios -->
-                <div>
-                    <p class="font-bold text-4xl">Usuarios</p>
-                </div>
-                <!-- Boton crear Usuario -->
-                <div>
-                    <button id="crearusuario" class="bg-[#CC2233] text-white font-bold py-[0.5rem] px-[2rem] rounded-lg">Crear Usuario</button>
-                </div>
-            </div>
-            <!-- CAJA DE BUSQUEDA -->
-            <div class="flex flex-row justify-start py-[4rem] px-[2rem]">
-                <p class="font-bold  py-[0.5rem] px-[0.5rem]">Buscar Usuario</p>  
-                <div class="rounded-full border-solid border-black border-2 mx-[0.5rem]">
-                    <p>?</p>
-                </div>      
-                            
-                <input type="text" class="rounded-lg border-solid border-black border-2">
-            </div>
-            <!-- CAJA DE CONTENIDO -->
-            <div class="flex flex-row p-[1rem] justify-between">
-                <!-- Titulos -->
-                <div class="flex flex-col">
-                    <!-- Area -->
-                    <div class="flex flex-row">
-                        <p class="font-bold text-xl">Area</p>
-                        <img src="./Vector.svg" alt="">
-                    </div>
-                    <div>Docencia</div>
-                    <div>Tecnologia</div>
-                    <div>Marketing</div>
-                </div>
-                <!-- Nombre -->
-                <div class="flex flex-col">
-                    <div class="flex flex-row">
-                        <p class="font-bold text-xl">Nombre</p>
-                        <img src="./Vector.svg" alt="">
-                    </div>
-                    <div id="contenidoNombreDocencia"></div>
-                    <div id="contenidoNombreTecnologia"></div>
-                    <div id="contenidoNombreMarketing"></div>
-                </div>
-                <!-- Usuario -->
-                <div class="flex flex-col">
-                    <div class="flex flex-row">
-                        <p class="font-bold text-xl">Usuario</p>
-                        <img src="./Vector.svg" alt="">
-                    </div>
-                    <div id="contenidoUsuarioDocencia"></div>
-                    <div id="contenidoUsuarioTecnologia"></div>
-                    <div id="contenidoUsuarioMarketing"></div>
-                </div>
-                <!-- Email -->
-                <div class="flex flex-col">
-                    <div class="flex flex-row">
-                        <p class="font-bold text-xl">Email</p>
-                        <img src="./Vector.svg" alt="">
-                    </div>
-                    <div id="contenidoEmailDocencia" class="text-[##C9231B]"></div>
-                    <div id="contenidoEmailTecnologia" class="text-[##C9231B]"></div>
-                    <div id="contenidoEmailMarketing" class="text-[##C9231B]"></div>
-                </div>
-                <!-- Edad -->
-                <div class="flex flex-col">
-                    <div class="flex flex-row">
-                        <p class="font-bold text-xl">Edad</p>
-                        <img src="./Vector.svg" alt="">
-                    </div>
-                    <div id="contenidoEdadDocencia"></div>
-                    <div id="contenidoEdadTecnologia"></div>
-                    <div id="contenidoEdadMarketing"></div>
-                </div>
-            </div>
-        </section>
+      <!-- barra roja -->
+      <section id="barraroja" class="w-[20%] bg-[#C9231B]"></section>
+      <!-- barra de contenido -->
+      <section id="contenido" class="w-[80%] bg-[#FFFFFF]">
+        <!-- CAJA DE ENCABEZADO -->
+        <div id="footer" class="flex flex-row justify-between">
+          <!-- caja vacia -->
+          <div></div>
+          <!-- Etiqueta Usuarios -->
+          <div>
+            <p class="font-bold text-4xl">Usuarios</p>
+          </div>
+          <!-- Boton crear Usuario -->
+          <div>
+            <button
+              id="crearusuario"
+              class="bg-[#CC2233] text-white font-bold py-[0.5rem] px-[2rem] rounded-lg"
+            >
+              Crear Usuario
+            </button>
+          </div>
+        </div>
+        <!-- CAJA DE BUSQUEDA -->
+        <div class="flex flex-row justify-start py-[4rem] px-[2rem]">
+          <p class="font-bold py-[0.5rem] px-[0.5rem]">Buscar Usuario</p>
+          <div
+            class="rounded-full border-solid border-black border-2 mx-[0.5rem]"
+          >
+            <p>?</p>
+          </div>
 
+          <input
+            type="text"
+            class="rounded-lg border-solid border-black border-2"
+          />
+        </div>
+        <!-- CAJA DE CONTENIDO -->
+        <table>
+          <tr>
+            <th class="px-[2rem] text-xl">Area</th>
+            <th class="px-[2rem] text-xl">Nombre</th>
+            <th class="px-[2rem] text-xl">Usuario</th>
+            <th class="px-[2rem] text-xl">Email</th>
+            <th class="px-[2rem] text-xl">Edad</th>
+          </tr>
+          <div id="contenidotabla">
+           
+          </div>
+        </table>
+      </section>
     </main>
-
-</body>
-<script src="./main.js"></script>
-
+  </body>
+  <script src="./main.js"></script>
 </html>
