@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Pag Siguiente</title>
+</head>
+
+<body class="flex">
+    <!-- CAJA PRINCIPAL -->
+    <main class="flex flex-row w-full">
+        <!-- barra roja -->
+        <section id="barraroja" class="w-[20%] bg-[#C9231B]"></section>
+        <!-- barra de contenido -->
+        <section id="contenido" class="w-[80%] bg-[#FFFFFF]">
+            <!-- CAJA DE ENCABEZADO -->
+            <div id="footer" class="flex flex-row justify-between w-auto p-[2rem]">
+                <!-- Boton atras -->
+                <div>
+                    <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.88502 13.5081L30.9998 13.4881L31.0022 16.4881L5.68298 16.5082L17.638 27.6387L15.5937 29.8344L1.28414 16.5117L1.00218 16.5119L1.00197 16.249L0.955811 16.206L1.0019 16.1565L0.999799 13.5119L1.64238 13.5114L15.1317 0.000732422L17.2547 2.12037L5.88502 13.5081Z" fill="#C9231B"/>
+                        </svg>
+                        
+                </div>
+                <!-- Etiqueta Usuarios -->
+                <div>
+                    <p class="font-bold text-4xl">Registro Personas</p>
+                </div>
+                <!-- Caja vacia -->
+                <div>
+
+                </div>
+            </div>
+            <!-- Formulario-->
+            <form action="" id="formulario" class="flex flex-col items-center p-[4rem]">
+                <div class="flex flex-row justify-between w-full mb-[2.5rem]">
+                    <label for="nombres" class="flex flex-col" >
+                        <span class="font-bold text-base">Nombres</span>
+                        <input type="text" id="nombres" class="border-[#ED00D5] border-solid border-2 rounded-lg p-[0.5rem]" >
+                    </label>
+                    
+                    <label for="apellidos" class="flex flex-col" >
+                        <span class="font-bold text-base">Apellidos</span>
+                        <input type="text" id="apellidos" class="border-[#ED00D5] border-solid border-2 rounded-lg p-[0.5rem]" >
+                    </label>
+                </div>
+                <div class="flex flex-row justify-between justify-between w-full mb-[2.5rem]">
+                    <label for="area" class="flex flex-col" >
+                        <span class="font-bold text-base">Area</span>
+                        <input type="number" id="area" class="border-[#ED00D5] border-solid border-2 rounded-lg p-[0.5rem]" >
+                    </label>
+                    
+                    <label for="usuario" class="flex flex-col" >
+                        <span class="font-bold text-base">Usuario</span>
+                        <input type="text" id="usuario" class="border-[#ED00D5] border-solid border-2 rounded-lg p-[0.5rem]" >
+                    </label>
+
+                    <label for="edad" class="flex flex-col" >
+                        <span class="font-bold text-base">Edad</span>
+                        <input type="number" id="edad" class="border-[#ED00D5] border-solid border-2 rounded-lg p-[0.5rem]" >
+                    </label>
+                </div>
+                <div class="flex flex-row justify-between w-full mb-[2.5rem]">
+                    <label for="direccion" class="flex flex-col w-full" >
+                        <span class="font-bold text-base">Direccion</span>
+                        <input type="text" id="direccion" class="border-[#ED00D5] border-solid border-2 rounded-lg p-[0.5rem]" >
+                    </label>
+                </div>
+                <div class="flex flex-row justify-between w-full mb-[2.5rem]">
+                    <label for="email" class="flex flex-col w-full" >
+                        <span class="font-bold text-base">Email</span>
+                        <input type="email" id="email" class="border-[#ED00D5] border-solid border-2 rounded-lg p-[0.5rem]" >
+                    </label>
+                </div>
+                <button id="btnenviar" class="font-bold text-white mt-[4rem] border-solid border-1 rounded-lg bg-[#CC2233] py-[1rem] px-[3rem]">Enviar</button>
+            </form>
+
+
+
+        </section>
+
+    </main>
+</body>
+<script src="main2.js"></script>
+
+</html>
