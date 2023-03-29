@@ -94,29 +94,29 @@
                             <label for="email" class="flex flex-col">
                                 <span class="font-bold">Email</span>
                                 <input type="email" id="email" name="email"
-                                    class="border-solid border-2 border-indigo-500 py-[0.4rem] rounded-lg">
+                                    class="border-solid border-2 border-indigo-500 py-[0.4rem] rounded-lg" required>
                             </label>
                             <!-- password -->
                             <label for="password" class="flex flex-col">
                                 <span class="font-bold">Password</span>
                                 <input type="password" name="password" id="password"
-                                    class="border-solid border-2 border-indigo-500 py-[0.4rem] rounded-lg">
+                                    class="border-solid border-2 border-indigo-500 py-[0.4rem] rounded-lg" required>
                             </label>
                             <!-- contenedor error datos -->
-                            <div id="errorDatos">
-                                
-                            </div>
+                            <div id="errorDatos"></div>
                             <!-- caja remember-forgot -->
                             <div class="flex flex-row justify-between py-[1rem] ">
                                 <!-- caja remember me -->
                                 <div class="flex flex-row justify-between">
-                                    <input type="checkbox" class="bg-[#3E334E] text-[#FFFFFF]" value="true">
+                                    <!-- Check-box -->
+                                    <input checked  type="checkbox" class="" >
                                     <div class="fex flex-row justify-center items-center">
                                         <p class="text-[0.8rem] pl-[0.2rem]">Remember me</p>
                                     </div>
                                     <!-- fogot Password -->
                                 </div>
-                                <p class="text-[0.8rem] underline-offset-4">Forgot password?</p>
+                                <a href="./index.html">Forgot password?</a>
+                                
                             </div>
                             <!-- botones login y sing Up -->
                             <div class="flex flex-row justify-between">
