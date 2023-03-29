@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Pág 1</title>
+</head>
+
+<body class="h-screen w-screen">
+    <main class="h-screen w-screen">
+        <!-- contenedor principal -->
+        <section class="border-2 sm:border-0 border-solid border-black rounded-lg flex flex-col sm:flex sm:flex-row">
+            <!-- imagenes iniciales -->
+
+            <!-- contenedor padre de las imagenes -->
+            <div class=" h-full w-full flex flex-row justify-between items-center px-[1rem] bg-[#191A24]">
+
+                <!-- columna 1 de imagenes -->
+                <div class="hidden  sm:block sm:gap-[1rem] pr-[1rem]">
+                    <!-- figura 1 -->
+                    <figure class="pb-[1rem]">
+                        <img src="./assets/1.svg" alt="">
+                    </figure>
+                    <!-- figura 4 -->
+                    <figure class="pb-[1rem]">
+                        <img src="./assets/4.svg" alt="">
+                    </figure>
+                    <!-- figura 7 -->
+                    <figure>
+                        <img src="./assets/7.svg" alt="">
+                    </figure>
+                </div>
+                <!-- columna 2 de imagenes -->
+                <div class="hidden  sm:block pr-[1rem]">
+                    <!-- figura 2 -->
+                    <figure class="pb-[1rem]">
+                        <img src="./assets/2.svg" alt="">
+                    </figure>
+                    <!-- figura 5 -->
+                    <figure class="pb-[1rem]">
+                        <img src="./assets/5.svg" alt="">
+                    </figure>
+                    <!-- figura 8 -->
+                    <figure>
+                        <img src="./assets/8.svg" alt="">
+                    </figure>
+                </div>
+                <!-- columna 3 de imagenes -->
+                <div class="">
+                    <!-- figura 3 -->
+                    <figure class="pb-[1rem]">
+                        <img src="./assets/3.svg" alt="" class="hidden  sm:block">
+                    </figure>
+                    <!-- figura 6 -->
+                    <figure class="pb-[1rem]">
+                        <img src="./assets/6.svg" alt="" class="hidden  sm:block">
+                    </figure>
+                    <!-- figura 9 -->
+                    <figure>
+                        <img src="./assets/9.svg" alt="" class="h-full">
+                    </figure>
+                </div>
+            </div>
+
+
+            <!-- segundo contenedor -->
+            <section class="sm:flex sm:flex-row sm:justify-center sm:items-center sm:w-full">
+                <!-- caja de logo y titulo -->
+                <div>
+                    <div>
+                        <div class="flex flex-col ">
+                            <!-- icono-texto -->
+                            <div class="flex flex-row pl-[1rem]">
+                                <figure>
+                                    <img src="./assets/Logo.svg" alt="logo">
+                                </figure>
+                                <div
+                                    class="flex flex-row justify-center items-center font-bold text-[#3E334E] text-4xl ml-[0.5rem]">
+                                    <p>Archint</p>
+                                </div>
+                            </div>
+                            <p class="p-[1rem] text-[#3E334E]">A new way to experience real state in the infinite
+                                virtual space.
+                            </p>
+                        </div>
+
+                        <!-- Formulario Login -->
+                        <form action="" id="formulario" class="text-[#3E334E] pb-[1rem] px-[1rem] flex flex-col">
+                            <p class="py-[1rem] font-bold text-start text-2xl">Login</p>
+                            <!-- email -->
+                            <label for="email" class="flex flex-col">
+                                <span class="font-bold">Email</span>
+                                <input type="email" id="email" name="email"
+                                    class="border-solid border-2 border-indigo-500 py-[0.4rem] rounded-lg">
+                            </label>
+                            <!-- password -->
+                            <label for="password" class="flex flex-col">
+                                <span class="font-bold">Password</span>
+                                <input type="password" name="password" id="password"
+                                    class="border-solid border-2 border-indigo-500 py-[0.4rem] rounded-lg">
+                            </label>
+                            <!-- caja remember-forgot -->
+                            <div class="flex flex-row justify-between py-[1rem] ">
+                                <!-- caja remember me -->
+                                <div class="flex flex-row justify-between">
+                                    <input type="checkbox" class="bg-[#3E334E] text-[#FFFFFF]" value="true">
+                                    <div class="fex flex-row justify-center items-center">
+                                        <p class="text-[0.8rem] pl-[0.2rem]">Remember me</p>
+                                    </div>
+                                    <!-- fogot Password -->
+                                </div>
+                                <p class="text-[0.8rem] underline-offset-4">Forgot password?</p>
+                            </div>
+                            <!-- botones login y sing Up -->
+                            <div class="flex flex-row justify-between">
+                                <input type="submit" name="submit" id="submit" value="Login"
+                                    class="bg-[#3E334E] text-[#FFFFFF] py-[0.5rem] px-[2rem] font-bold rounded-lg">
+                                <button
+                                    class="bg-[#FFFFFF] text-[#3E334E] py-[0.5rem] px-[2rem] font-bold rounded-lg border-solid border-2 border-[#3E334E]">Sing
+                                    Up</button>
+                            </div>
+
+
+                        </form>
+
+                    </div>
+
+
+                </div>
+
+
+            </section>
+
+        </section>
+
+    </main>
+</body>
+<script src="./main.js"></script>
+
+</html>
